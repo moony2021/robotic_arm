@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+<link rel="stylesheet" href="new 1.css">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<form name ="motors" method= "POST" action= "index.php">
+
+<h1>control panel</h1>
+<br>
+<div class="slidecontainer">
+  <h3>motor1 </h3>
+  <input type="range" min="0" max="180" value="0" class="slider" id="motor1" name =motor1>
+  <p> Value: <span id="m1"></span></p>
+  
+  
+  <h3>motor2: </h3>
+  <input type="range" min="0" max="180" value="0" class="slider" id="motor2" name=motor2>
+  <p>Value: <span id="m2"></span></p>
+</div>
+ <h3>motor3:</h3>
+  <input type="range" min="0" max="180" value="0" class="slider" id="motor3" name=motor3>
+  <p> Value: <span id="m3"></span></p>
+</div>
+ <h3>motor4:</h3>
+  <input type="range" min="0" max="180" value="0" class="slider" id="motor4"name=motor4>
+  <p>Value: <span id="m4"></span></p>
+</div>
+ <h3>motor5:</h3>
+  <input type="range" min="0" max="180" value="0" class="slider" id="motor5"name=motor5>
+  <p> Value: <span id="m5"></span></p>
+</div>
+ <h3>motor6: </h3>
+  <input type="range" min="0" max="180" value="0" class="slider" id="motor6"name=motor6>
+  <p>Value: <span id="m6"></span></p>
+</div>
+</div>
+
+
+
+<script>
+
+  var FirstSliderRange = document.getElementById("motor1");
+      var Firstoutput = document.getElementById("m1");
+      Firstoutput.innerHTML = FirstSliderRange.value;
+      
+      FirstSliderRange.oninput = function() {
+        Firstoutput.innerHTML = this.value;
+      }
+  
+  
+  </script>
+
+<script>
+
+  var SecondSliderRange = document.getElementById("motor2");
+      var Secondoutput = document.getElementById("m2");
+      Secondoutput.innerHTML = SecondSliderRange.value;
+      
+      SecondSliderRange.oninput = function() {
+        Secondoutput.innerHTML = this.value;
+      }
+  
+  
+  </script>
+
+ 
+<script>
+
+  var ThirdSliderRange = document.getElementById("motor3");
+      var Thirdoutput = document.getElementById("m3");
+      Thirdoutput.innerHTML = ThirdSliderRange.value;
+      
+      ThirdSliderRange.oninput = function() {
+        Thirdoutput.innerHTML = this.value;
+      }
+  
+  
+  </script>
+
+
+ 
+
+<script>
+
+  var FourthSliderRange = document.getElementById("motor4");
+      var Fourthoutput = document.getElementById("m4");
+      Fourthoutput.innerHTML = FourthSliderRange.value;
+      
+      FourthSliderRange.oninput = function() {
+        Fourthoutput.innerHTML = this.value;
+      }
+  
+  
+  </script>
+
+
+
+ 
+
+<script>
+var FifthSliderRange = document.getElementById("motor5");
+      var Fifthoutput = document.getElementById("m5");
+      Fifthoutput.innerHTML = FifthSliderRange.value;
+      
+      FifthSliderRange.oninput = function() {
+        Fifthoutput.innerHTML = this.value;
+      }
+      </script>
+ 
+<script>
+  var LastSliderRange = document.getElementById("motor6");
+        var Lastoutput = document.getElementById("m6");
+        Lastoutput.innerHTML = LastSliderRange.value;
+        
+        LastSliderRange.oninput = function() {
+          Lastoutput.innerHTML = this.value;
+        }
+        </script>
+
+ 
+
+
+		<input type="submit" value = "Save" name = save  
+		style="font-size: 30px; background: black; border:3px solid red;color: white; font:white; border-radius: 10px;" > 
+        <input type="submit" value = "ON" name = on  
+		style="font-size: 30px; border-radius: 10px; background: white" >
+       
+
+        </form>
+	<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "26dc4161-4873-45b7-a468-497e8b695bba", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "32091e05-79fb-46a5-ad0f-ed13e37b9927", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+</html>
+
